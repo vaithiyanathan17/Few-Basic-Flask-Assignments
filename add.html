@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addition</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="add.css" rel="stylesheet" type="text/css">
+    <link href="{{url_for('static',filename='add.css')}}" rel="stylesheet">
+</head>
+<body>
+<form action="" method="post" class="easy">
+ <section>
+   <div class="inputs">
+     <div class="input1">
+        <label for="Number1">Number1</label>
+            <input type="text" class="text" name="Number1" id="Number1" placeholder="Entert a number">
+     </div>
+     <div class="input2">
+        <label for="Number2">Number2</label>
+            <input type="text" class="text" name="Number2" id="Number2" placeholder="Enter a number">
+     </div>
+     <div class="buton">
+        <input class="btn btn-default" type="submit" value="Submit">
+     </div>
+   </div>
+ </section>
+   <br>
+    {{alert}}
+    <h3>{{add}}</h3>
+</form>
+</body>
+</html>
